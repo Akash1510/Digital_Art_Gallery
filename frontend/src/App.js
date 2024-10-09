@@ -5,9 +5,10 @@ import Signup from './Components/Auth_Page/signup';
 import CreatePost from './Components/POST/Uplooad/Create_Post';
 import Forgotpassword from './Components/Auth_Page/forgot_password';
 import Home from './Components/POST/Profile/Home'
-import Images from './Components/POST/Profile/images';
+
 import Resetpassword from './Components/Auth_Page/reset_password';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Profile from './Components/POST/Profile/profile';
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
           <Route path='/forgot_password' element={<Forgotpassword />} />
           <Route path='/reset_password' element={<Resetpassword />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/image' element={<Images />} />
+          <Route path='/profile' element={<Profile/>}/>
+          
         </Routes>
       </Router>
     </>
